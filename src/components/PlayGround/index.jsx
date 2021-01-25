@@ -5,8 +5,6 @@ function PlayGround(props) {
         const config = props.config.getConfig()
         config.fluxResponse = props.table
 
-        console.log(config);
-
         return config
     }
 

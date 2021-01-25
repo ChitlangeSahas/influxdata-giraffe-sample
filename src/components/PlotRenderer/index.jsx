@@ -3,7 +3,6 @@ import * as Giraffe from '@influxdata/giraffe'
 import {HoverTimeProvider} from "@influxdata/giraffe";
 
 function PlotRenderer(props) {
-    console.log(props)
     return (
         <HoverTimeProvider>
             <div

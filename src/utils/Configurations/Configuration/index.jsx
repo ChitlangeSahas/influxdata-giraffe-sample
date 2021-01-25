@@ -24,7 +24,7 @@ export default class Configuration {
         // Base Query
         return [
             `from(bucket: "${Constants.Influx.BUCKET}")`,
-            'range(start: -1h)',
+            'range(start: -7d)',
             'filter(fn: (r) => r._measurement == "mem")',
             'filter(fn: (r) => r._field == "used_percent")',
             'aggregateWindow(every: 1m, fn: mean, createEmpty: false)',
